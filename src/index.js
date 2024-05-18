@@ -4,7 +4,13 @@ import renderMenu from './menu.js';
 import renderAbout from './about.js';
 
 function initialize() {
-    const contentContainer = document.querySelector('#content');
+    const home = document.querySelector('.home');
+    const menu = document.querySelector('.menu');
+    const about = document.querySelector('.about');
+
+    home.addEventListener('click', () => { renderHome() });
+    menu.addEventListener('click', () => { renderMenu() });
+    about.addEventListener('click', () => { renderAbout() });
 
 }
 
