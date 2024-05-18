@@ -16,6 +16,24 @@
     border: 1rem solid white;
 }
 
+.content {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cell {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.text {
+    font-size: 24px;
+}
+
 body {
     display: flex;
     flex-direction: column;
